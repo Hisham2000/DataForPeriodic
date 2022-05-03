@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2022 at 04:29 PM
+-- Generation Time: May 04, 2022 at 01:28 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -74,8 +74,7 @@ CREATE TABLE `dataoffamily` (
 
 CREATE TABLE `dataofofficer` (
   `O_SSN` int(11) NOT NULL,
-  `FirstName` varchar(100) NOT NULL,
-  `lastName` varchar(100) DEFAULT NULL,
+  `Name` varchar(100) NOT NULL,
   `AD_SSN` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -83,8 +82,8 @@ CREATE TABLE `dataofofficer` (
 -- Dumping data for table `dataofofficer`
 --
 
-INSERT INTO `dataofofficer` (`O_SSN`, `FirstName`, `lastName`, `AD_SSN`) VALUES
-(123456, 'hisham', 'anwar', 123);
+INSERT INTO `dataofofficer` (`O_SSN`, `Name`, `AD_SSN`) VALUES
+(123456, 'hisham', 123);
 
 -- --------------------------------------------------------
 
@@ -109,8 +108,9 @@ CREATE TABLE `dataofuser` (
 --
 
 INSERT INTO `dataofuser` (`U_SSN`, `Name`, `Age`, `MaritalStatus`, `Address`, `MobileNum`, `Sex`, `CheckState`, `SSN_OFF`) VALUES
-(258741, 'hisham', 33, 'single', 'dewrqa', 4785, 'male', 0, 456781),
-(123456789, 'mo', 22, 'single', 'sadaf', 100, 'male', 0, 123);
+(147852, 'hisham', 33, 'Married', 'sdfsdwa', 1223456789, 'male', 0, 145623),
+(258741, 'farouk', 33, 'single', 'dewrqa', 4785, 'male', 0, 456781),
+(123456789, 'mo', 35, 'single', 'sadaf', 200, 'male', 0, 123);
 
 -- --------------------------------------------------------
 
