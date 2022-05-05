@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2022 at 01:28 AM
+-- Generation Time: May 05, 2022 at 02:40 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -29,8 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `area` (
   `SSN_Officer` int(11) NOT NULL,
-  `LOcation` varchar(150) DEFAULT NULL
+  `Location` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `area`
+--
+
+INSERT INTO `area` (`SSN_Officer`, `Location`) VALUES
+(123456, 'DarElSalam'),
+(147963, 'Shubra'),
+(258741, 'Giza'),
+(2583146, 'luxor');
 
 -- --------------------------------------------------------
 
@@ -83,7 +93,10 @@ CREATE TABLE `dataofofficer` (
 --
 
 INSERT INTO `dataofofficer` (`O_SSN`, `Name`, `AD_SSN`) VALUES
-(123456, 'hisham', 123);
+(123456, 'Hisham', 1234556789),
+(147963, 'Anwar', 123),
+(258741, 'Farouk', 123),
+(2583146, 'Ahmed', 123478852);
 
 -- --------------------------------------------------------
 
@@ -110,6 +123,7 @@ CREATE TABLE `dataofuser` (
 INSERT INTO `dataofuser` (`U_SSN`, `Name`, `Age`, `MaritalStatus`, `Address`, `MobileNum`, `Sex`, `CheckState`, `SSN_OFF`) VALUES
 (147852, 'hisham', 33, 'Married', 'sdfsdwa', 1223456789, 'male', 0, 145623),
 (258741, 'farouk', 33, 'single', 'dewrqa', 4785, 'male', 0, 456781),
+(258963, 'hayat', 33, 'single', 'sdqew', 147852, 'female', 0, 456781),
 (123456789, 'mo', 35, 'single', 'sadaf', 200, 'male', 0, 123);
 
 -- --------------------------------------------------------
