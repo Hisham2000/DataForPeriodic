@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2022 at 02:40 AM
+-- Generation Time: May 14, 2022 at 09:45 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -37,8 +37,8 @@ CREATE TABLE `area` (
 --
 
 INSERT INTO `area` (`SSN_Officer`, `Location`) VALUES
-(123456, 'DarElSalam'),
-(147963, 'Shubra'),
+(1911, 'Esmaily'),
+(147963, 'Barcelona'),
 (258741, 'Giza'),
 (2583146, 'luxor');
 
@@ -93,8 +93,8 @@ CREATE TABLE `dataofofficer` (
 --
 
 INSERT INTO `dataofofficer` (`O_SSN`, `Name`, `AD_SSN`) VALUES
-(123456, 'Hisham', 1234556789),
-(147963, 'Anwar', 123),
+(123456, 'hisham', 1234556789),
+(147963, 'Messi', 1234556789),
 (258741, 'Farouk', 123),
 (2583146, 'Ahmed', 123478852);
 
@@ -121,10 +121,18 @@ CREATE TABLE `dataofuser` (
 --
 
 INSERT INTO `dataofuser` (`U_SSN`, `Name`, `Age`, `MaritalStatus`, `Address`, `MobileNum`, `Sex`, `CheckState`, `SSN_OFF`) VALUES
+(23, 'msda', 123, 'asd', 'sadf', 124, 'sdaf', 1, 456781),
+(25, 'Seed', 2000, 'in RelationShiop', 'Sohag', 147789, 'male', 0, 456781),
+(23456, 'hishamAnwar', 258, 'single', 'sdfwer', 123654, 'female', 2, 456781),
 (147852, 'hisham', 33, 'Married', 'sdfsdwa', 1223456789, 'male', 0, 145623),
 (258741, 'farouk', 33, 'single', 'dewrqa', 4785, 'male', 0, 456781),
 (258963, 'hayat', 33, 'single', 'sdqew', 147852, 'female', 0, 456781),
-(123456789, 'mo', 35, 'single', 'sadaf', 200, 'male', 0, 123);
+(2014853, 'MOShAna', 253, 'Single', 'swerqafd', 145623, 'Female', 0, 456781),
+(2416878, 'MoSalah', 50, 'Sigle', 'Gharbia', 1247889665, 'Female', 0, 456781),
+(123456789, 'mo', 35, 'single', 'sadaf', 200, 'male', 0, 123),
+(124785693, 'Mahmod', 25, 'Married', 'swq', 174865, 'Male', 0, 456781),
+(144562255, 'hitham', 32, 'single', 'sdwer', 124789653, 'male', 0, 456781),
+(147253689, 'Fatakat', 21, 'married', 'sdqwe', 234561789, 'female', 0, 456781);
 
 -- --------------------------------------------------------
 
